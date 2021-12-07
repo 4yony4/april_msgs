@@ -1,0 +1,10 @@
+std_msgs/Header header 
+uint32 batch_num # Number of inspection 
+string pillow_type # Detected type of pillow 
+uint32 mould_num # Mould ID 
+april_msgs/QualityCheckResult visual_inspection_result 
+sensor_msgs/Image visual_inspection_image 
+float64 pillow_weight 
+--- 
+bool success # Indicate successful run of triggered service 
+string message # Informational, e.g. for error messages 

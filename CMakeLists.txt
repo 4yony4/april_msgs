@@ -5,7 +5,7 @@ project(april_msgs)
 add_compile_options(-std=c++11)
 
 # Finding catkin macros and libraries
-find_package(catkin REQUIRED COMPONENTS std_msgs message_generation)
+find_package(catkin REQUIRED COMPONENTS std_msgs sensor_msgs message_generation)
 
 
 ################################################
@@ -21,11 +21,11 @@ add_message_files(
 )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+add_service_files(
+  FILES
+  PemuStatistics.srv
+  Weigh.srv
+)
 
 ## Generate actions in the 'action' folder
 # add_action_files(
@@ -38,6 +38,7 @@ add_message_files(
 generate_messages(
   DEPENDENCIES
   std_msgs
+  sensor_msgs
 )
 
 
@@ -48,7 +49,7 @@ generate_messages(
 # Generating cmake config files for the package. Declaring also things to be
 # passed to dependent projects.
 catkin_package(
-  CATKIN_DEPENDS std_msgs message_runtime
+  CATKIN_DEPENDS std_msgs sensor_msgs message_runtime
 )
 
 ###########

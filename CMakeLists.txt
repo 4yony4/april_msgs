@@ -25,6 +25,7 @@ add_service_files(
   FILES
   PemuStatistics.srv
   Weigh.srv
+  TcpConnect.srv
 )
 
 ## Generate actions in the 'action' folder

@@ -18,6 +18,7 @@ add_message_files(
   ComponentStatus.msg
   QualityCheckResult.msg
   ShelfLife.msg
+  PassportValidation.msg
 )
 
 ## Generate services in the 'srv' folder

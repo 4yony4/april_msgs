@@ -1,65 +1,61 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(april_msgs)
 
-# Compiling as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++11)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-# Finding catkin macros and libraries
-find_package(catkin REQUIRED COMPONENTS std_msgs sensor_msgs message_generation)
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+# uncomment the following section in order to fill in
+# further dependencies manually.
+# find_package(<dependency> REQUIRED)
 
 
-################################################
-## Declare ROS messages, services and actions ##
-################################################
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-# Generating messages in the 'msg' folder
-add_message_files(
-  FILES
-  ComponentStatus.msg
-  QualityCheckResult.msg
-  ShelfLife.msg
-  PassportValidation.msg
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/sim_sem/SEMEmergency.msg"
+  "msg/sim_sem/SEMEmergencyRequestStatus.msg"
+  "msg/sim_sem/SIMSEMEnvironment.msg"
+  "msg/sim_sem/SIMFatigueAnalysis.msg"
+  "msg/sim_sem/SIMSEMHumanBehaviour.msg"
+  "msg/sim_sem/SIMSEMHumanGraspingStrategies.msg"
+  "msg/sim_sem/SIMHumanHandGesture.msg"
+  "msg/sim_sem/SIMSEMHumanMotion.msg"
+  "msg/sim_sem/SIMHumanParameterIntention.msg" #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
+  "msg/sim_sem/SIMHumanSight.msg"
+  "msg/sim_sem/SEMNeuromorphicSensing.msg"
+  "msg/sim_sem/SIMSEMPhysicalObject.msg"
+  "msg/sim_sem/SIMRobotArm.msg"
+  "msg/sim_sem/SIMRobotArmKinematic.msg"
+  "msg/sim_sem/SIMRobotGraspingStrategies.msg"
+  "msg/sim_sem/SIMRobotHand.msg"
+  "msg/sim_sem/SIMRobotHandKinematic.msg"
+  "msg/sim_sem/SIMSEMRobotHighLatencyCorrections.msg"
+  "msg/sim_sem/SEMRobotLowLatencyCorrections.msg"
+  "msg/sim_sem/SIMTactile.msg"
+  "msg/ComponentStatus.msg"
+  "msg/PassportValidation.msg"
+  "msg/QualityCheckResult.msg"
+  "msg/ShelfLife.msg"
+  "srv/PemuStatistics.srv"
+  "srv/TcpConnect.srv"
+  "srv/Weigh.srv"
+  DEPENDENCIES std_msgs sensor_msgs
 )
 
-## Generate services in the 'srv' folder
-add_service_files(
-  FILES
-  PemuStatistics.srv
-  Weigh.srv
-  TcpConnect.srv
-)
-
-## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
-
-# Generating added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-  sensor_msgs
-)
-
-
-###################################
-## catkin specific configuration ##
-###################################
-
-# Generating cmake config files for the package. Declaring also things to be
-# passed to dependent projects.
-catkin_package(
-  CATKIN_DEPENDS std_msgs sensor_msgs message_runtime
-)
-
-###########
-## Build ##
-###########
-
-# Specifying additional locations of header files
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
-
+ament_package()

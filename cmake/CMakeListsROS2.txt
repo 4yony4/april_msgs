@@ -6,7 +6,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  msg/ros2/em/Emergency.msg
+  msg/ros2/sem/Emergency.msg
   msg/ros2/sem/EmergencyRequestStatus.msg
   msg/ros2/sim_sem/Environment.msg
   msg/ros2/sim/FatigueAnalysis.msg
@@ -17,7 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/ros2/sim/HumanParameterIntention.msg #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
   msg/ros2/sim/HumanSight.msg
   msg/ros2/sem/NeuromorphicSensing.msg
-  msg/ros2/sem/PhysicalObject.msg
+  msg/ros2/sim_sem/PhysicalObject.msg
   msg/ros2/sim/RobotArm.msg
   msg/ros2/sim/RobotArmKinematic.msg
   msg/ros2/sim/RobotGraspingStrategies.msg
@@ -47,8 +47,10 @@ endif()
 #    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 #    $<INSTALL_INTERFACE:include>)
 
-install(DIRECTORY include/
-  DESTINATION include)
+install(
+  FILES april_msgs_mapping_rule.yaml
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_export_dependencies(rosidl_default_runtime)
 

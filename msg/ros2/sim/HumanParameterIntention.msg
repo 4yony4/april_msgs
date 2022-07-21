@@ -3,5 +3,5 @@ string motion_prediction
 float32 engagement_level
 float32 cognitive_level
 float32 mood_level
-SIMSEMHumanMotion[] humanmotion_list
+HumanMotion[] humanmotion_list
 

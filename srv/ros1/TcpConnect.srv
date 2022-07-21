@@ -1,0 +1,8 @@
+#request constants
+string ip_address
+uint16 port
+---
+#response constants
+#response fields
+bool success
+string message

@@ -11,6 +11,7 @@
   </description>
 
   <maintainer email="andreabu@prensilia.com">Andrea Burani</maintainer>
+  <maintainer email="jonathan.barmagen@iit.it">Jonathan Z. Bar-Magen Numhauser</maintainer>
 
   <license>BSD</license>
 
@@ -20,6 +21,7 @@
   <!-- <url type="website">http://wiki.ros.org/april_msgs</url> -->
 
   <author email="andreabu@prensilia.com">Andrea Burani</author>
+  <author email="jonathan.barmagen@iit.it">Jonathan Z. Bar-Magen Numhauser</author>
 
     <!--  ROS1 dependencies -->
   <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
@@ -29,55 +31,28 @@
   <build_export_depend condition="$ROS_VERSION == 1">sensor_msgs</build_export_depend>
   <exec_depend condition="$ROS_VERSION == 1">message_runtime</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">std_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 1">sensor_msgs</exec_depend>
+  <!--exec_depend condition="$ROS_VERSION == 1">sensor_msgs</exec_depend-->
 
   <!--  ROS2 dependencies -->
   <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
   <depend condition="$ROS_VERSION == 2">rclcpp</depend>
   <test_depend condition="$ROS_VERSION == 2">ament_lint_auto</test_depend>
   <test_depend condition="$ROS_VERSION == 2">ament_lint_common</test_depend>
+  <build_depend condition="$ROS_VERSION == 2">message_generation</build_depend>
+  <build_depend condition="$ROS_VERSION == 2">rosidl_default_generators</build_depend>
+  <exec_depend condition="$ROS_VERSION == 2">rosidl_default_runtime</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">message_runtime</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">sensor_msgs</exec_depend>
 
   <!-- common dependencies -->
   <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
 
   <member_of_group condition="$ROS_VERSION == 2">rosidl_interface_packages</member_of_group>
 
   <export>
     <build_type condition="$ROS_VERSION == 1">catkin</build_type>
     <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
-  </export>
-
-<!--
-  <buildtool_depend>catkin</buildtool_depend>
-
-  <build_depend>message_generation</build_depend>
-  <build_depend>std_msgs</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-
-  <build_export_depend>std_msgs</build_export_depend>
-  <build_export_depend>sensor_msgs</build_export_depend>
-
-  <exec_depend>message_runtime</exec_depend>
-  <exec_depend>std_msgs</exec_depend>
-  <exec_depend>sensor_msgs</exec_depend>
--->
-  <buildtool_depend>ament_cmake</buildtool_depend>
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
-
-  <build_depend>message_generation</build_depend>
-  <build_depend>rosidl_default_generators</build_depend>
-  <build_depend>sensor_msgs</build_depend>
-
-  <exec_depend>rosidl_default_runtime</exec_depend>
-  <exec_depend>message_runtime</exec_depend>
-  <exec_depend>sensor_msgs</exec_depend>
-
-  <member_of_group>rosidl_interface_packages</member_of_group>
-  <depend>std_msgs</depend>
-
-  <export>
-    <build_type>ament_cmake</build_type>
   </export>
 
 </package>

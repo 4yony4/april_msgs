@@ -7,6 +7,9 @@ find_package(catkin REQUIRED COMPONENTS
 # search for all msg files
 FILE(GLOB messages_to_build RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/msg"
     "${CMAKE_CURRENT_SOURCE_DIR}/msg/ros1/*.msg")
+    "${CMAKE_CURRENT_SOURCE_DIR}/msg/ros1/sim/*.msg"
+    "${CMAKE_CURRENT_SOURCE_DIR}/msg/ros1/sem/*.msg"
+    "${CMAKE_CURRENT_SOURCE_DIR}/msg/ros1/sim_sem/*.msg"
 
 # notify catkin to look at the previously found msg files
 add_message_files(DIRECTORY

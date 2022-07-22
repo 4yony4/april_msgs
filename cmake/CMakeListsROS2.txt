@@ -6,26 +6,26 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  msg/ros2/sem/Emergency.msg
-  msg/ros2/sem/EmergencyRequestStatus.msg
-  msg/ros2/sim_sem/Environment.msg
-  msg/ros2/sim/FatigueAnalysis.msg
-  msg/ros2/sim_sem/HumanBehaviour.msg
-  msg/ros2/sim_sem/HumanGraspingStrategies.msg
-  msg/ros2/sim/HumanHandGesture.msg
-  msg/ros2/sim_sem/HumanMotion.msg
-  msg/ros2/sim/HumanParameterIntention.msg #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
-  msg/ros2/sim/HumanSight.msg
-  msg/ros2/sem/NeuromorphicSensing.msg
-  msg/ros2/sim_sem/PhysicalObject.msg
-  msg/ros2/sim/RobotArm.msg
-  msg/ros2/sim/RobotArmKinematic.msg
-  msg/ros2/sim/RobotGraspingStrategies.msg
-  msg/ros2/sim/RobotHand.msg
-  msg/ros2/sim/RobotHandKinematic.msg
-  msg/ros2/sim_sem/RobotHighLatencyCorrections.msg
-  msg/ros2/sem/RobotLowLatencyCorrections.msg
-  msg/ros2/sim/Tactile.msg
+  msg_ros2/sem/Emergency.msg
+  msg_ros2/sem/EmergencyRequestStatus.msg
+  msg_ros2/sim_sem/Environment.msg
+  msg_ros2/sim/FatigueAnalysis.msg
+  msg_ros2/sim_sem/HumanBehaviour.msg
+  msg_ros2/sim_sem/HumanGraspingStrategies.msg
+  msg_ros2/sim/HumanHandGesture.msg
+  msg_ros2/sim_sem/HumanMotion.msg
+  msg_ros2/sim/HumanParameterIntention.msg #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
+  msg_ros2/sim/HumanSight.msg
+  msg_ros2/sem/NeuromorphicSensing.msg
+  msg_ros2/sim_sem/PhysicalObject.msg
+  msg_ros2/sim/RobotArm.msg
+  msg_ros2/sim/RobotArmKinematic.msg
+  msg_ros2/sim/RobotGraspingStrategies.msg
+  msg_ros2/sim/RobotHand.msg
+  msg_ros2/sim/RobotHandKinematic.msg
+  msg_ros2/sim_sem/RobotHighLatencyCorrections.msg
+  msg_ros2/sem/RobotLowLatencyCorrections.msg
+  msg_ros2/sim/Tactile.msg
   DEPENDENCIES builtin_interfaces std_msgs
   ADD_LINTER_TESTS
   )

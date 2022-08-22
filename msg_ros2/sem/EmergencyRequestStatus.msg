@@ -1,3 +1,3 @@
-#std_msgs/Header Header
+std_msgs/Header header     # standard ROS header
 string request_progress
 string request_result

@@ -1,4 +1,4 @@
-#std_msgs/Header Header
+std_msgs/Header header     # standard ROS header
 string[] action ["movement","grasp","stopping"]
 string description
 string cause

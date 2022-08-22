@@ -1,4 +1,4 @@
-#std_msgs/Header Header
+std_msgs/Header header     # standard ROS header
 string shape
 int64 size 
 string position 

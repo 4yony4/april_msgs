@@ -1,4 +1,5 @@
-#std_msgs/Header Header
+
+std_msgs/Header header
 string hand_position 
 string hand_velocity 
 string hand_acceleration

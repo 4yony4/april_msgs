@@ -27,6 +27,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg_ros2/sem/RobotLowLatencyCorrections.msg
   msg_ros2/sim/Tactile.msg
   msg_ros2/yarp/Output.msg
+  msg_ros2/Debug.msg
   DEPENDENCIES builtin_interfaces std_msgs
   ADD_LINTER_TESTS
   )

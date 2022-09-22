@@ -1,0 +1,12 @@
+-
+  ros1_package_name: 'april_msgs'
+  ros1_message_name: 'Debug'
+  ros2_package_name: 'april_msgs'
+  ros2_message_name: 'Debug'
+
+  ros1_package_name: 'yarp'
+  ros1_message_name: 'Debug'
+  ros2_package_name: 'april_msgs'
+  ros2_message_name: 'Debug'
+  fields_1_to_2:
+    msg: 'msg'

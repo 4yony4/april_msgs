@@ -50,7 +50,7 @@ endif()
 #    $<INSTALL_INTERFACE:include>)
 
 install(
-  FILES april_msgs_mapping_rule.yaml
+  FILES map_rules.yaml
   DESTINATION share/${PROJECT_NAME}
 )
 

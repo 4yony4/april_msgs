@@ -1,0 +1,8 @@
+std_msgs/Header header
+BoundingBox bounding_box
+sensor_msgs/Image segmentation_mask
+float64 probability
+int16 detected_id
+int16 tracked_id
+int16 class_id
+string class_name

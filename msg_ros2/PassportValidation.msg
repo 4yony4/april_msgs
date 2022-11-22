@@ -1,3 +1,3 @@
-std_msgs/Header Header
+std_msgs/Header header
 string passport_num
 string result

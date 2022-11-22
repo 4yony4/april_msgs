@@ -28,6 +28,25 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg_ros2/sim/Tactile.msg
   msg_ros2/yarp/Output.msg
   msg_ros2/Debug.msg
+  msg_ros2/hicem_locem/ActionCommon.msg
+  msg_ros2/pem/BoundingBox.msg
+  msg_ros2/pem/BoundingBoxes.msg
+  msg_ros2/pem/ClusteredObject.msg
+  msg_ros2/pem/DetectedObject.msg
+  msg_ros2/pem/DetectedObjects.msg
+  msg_ros2/pem/EnvironmentNode.msg
+  msg_ros2/pem/GraspFacts.msg
+  msg_ros2/pem/GraspTrajectory.msg
+  msg_ros2/pem/Hand.msg
+  msg_ros2/pem/ObjectEstimatedPose.msg
+  msg_ros2/pem/ObjectsEstimatedPoses.msg
+  msg_ros2/pem/Person.msg
+  msg_ros2/pem/PersonList.msg
+  msg_ros2/pem/SymbolicAction.msg
+  msg_ros2/ComponentStatus.msg
+  msg_ros2/PassportValidation.msg
+  msg_ros2/QualityCheckResult.msg
+  msg_ros2/ShelfLife.msg
   DEPENDENCIES builtin_interfaces std_msgs
   ADD_LINTER_TESTS
   )

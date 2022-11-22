@@ -1,4 +1,4 @@
-std_msgs/Header header
+std_msgs/Header Header     # standard ROS header
 uint32 timestamp
 string semantictag
-april_msgs/PhysicalObject[] objects_list
+PhysicalObject[] objects_list

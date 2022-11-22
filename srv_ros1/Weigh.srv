@@ -1,0 +1,5 @@
+--- 
+std_msgs/Header header 
+bool success # Indicate successful run of triggered service
+float64 weight # Current weight indicated by scale
+string message # Informational, e.g. for error messages

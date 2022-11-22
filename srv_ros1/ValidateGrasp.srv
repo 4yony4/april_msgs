@@ -1,0 +1,4 @@
+string object_frame_id
+april_msgs/GraspTrajectory[] grasp_poses
+---
+april_msgs/GraspTrajectory[] valid_grasp_poses

@@ -1,0 +1,4 @@
+string object_frame_id
+april_msgs/GraspTrajectory grasp_trajectory
+---
+geometry_msgs/PoseStamped pregrasp_pose

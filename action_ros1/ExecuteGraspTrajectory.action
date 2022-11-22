@@ -1,0 +1,7 @@
+april_msgs/GraspTrajectory grasp_trajectory
+---
+bool success
+string message
+---
+geometry_msgs/Pose current_pose
+sensor_msgs/JointState current_fingers_state

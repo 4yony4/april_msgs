@@ -1,0 +1,10 @@
+april_msgs/ActionCommon action_common
+april_msgs/GraspTrajectory[] grasp_trajectories
+---
+bool success
+string message
+---
+geometry_msgs/Pose current_pose
+int32 hand_pose_num
+sensor_msgs/JointState current_fingers_state
+int32 fingers_state_num

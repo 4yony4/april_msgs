@@ -1,0 +1,7 @@
+april_msgs/ActionCommon action_common
+geometry_msgs/PoseStamped target_pose
+---
+bool success
+string message
+---
+geometry_msgs/PoseStamped current_pose

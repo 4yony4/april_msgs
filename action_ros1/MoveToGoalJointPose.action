@@ -1,0 +1,7 @@
+april_msgs/ActionCommon action_common
+sensor_msgs/JointState target_state
+---
+bool success
+string message
+---
+sensor_msgs/JointState current_state

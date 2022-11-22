@@ -1,7 +1,11 @@
 # search for everything we need to build the messages, dont forget the message_generation
 find_package(catkin REQUIRED COMPONENTS
   message_generation
+  actionlib_msgs
   std_msgs
+  sensor_msgs
+  vision_msgs
+  geometry_msgs
 )
 
 # search for all msg files
@@ -15,15 +19,42 @@ add_message_files(DIRECTORY
   ${messages_to_build}
 )
 
+# # Generate services in the 'srv' folder
+add_service_files(DIRECTORY
+  srv_ros1
+  FILES
+  GetPregraspPose.srv
+  GetSymbolicAction.srv
+  PemuStatistics.srv
+  ValidateGrasp.srv
+  Weigh.srv
+  TcpConnect.srv
+)
+
+# Generate actions in the 'action' folder
+add_action_files(DIRECTORY
+  action_ros1
+  FILES
+  ExecuteGraspTrajectory.action
+  Handover.action
+  MoveToGoalJointPose.action
+  MoveToGraspPose.action
+  MoveToPose.action
+)
+
 # build the header files from the msg files, and notify catkin about the dependencies
 generate_messages(
   DEPENDENCIES
+  actionlib_msgs
   std_msgs
+  sensor_msgs
+  vision_msgs
+  geometry_msgs
 )
 
 # export the dependencis of this package for who ever depends on us
 catkin_package(
-  CATKIN_DEPENDS message_runtime std_msgs
+  CATKIN_DEPENDS actionlib_msgs std_msgs sensor_msgs vision_msgs geometry_msgs message_runtime
 )
 
 include_directories(

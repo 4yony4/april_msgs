@@ -3,15 +3,21 @@ Repository containing msg, srv and action files of APRIL system.
 
 ## Contact info @ IIT: 
 
-[Giulia Belgiovine](mailto:Giulia.Belgiovine@iit.it)
+* [Giulia Belgiovine](mailto:Giulia.Belgiovine@iit.it)
 
-[Jonathan Bar-Magen Numhauser](mailto:jonathan.barmagen@iit.it)
+* [Jonathan Bar-Magen Numhauser](mailto:jonathan.barmagen@iit.it)
 
-[Francesco Rea](mailto:Francesco.Rea@iit.it)
+* [Francesco Rea](mailto:Francesco.Rea@iit.it)
 
 ## Instructions
 
 This branch of April Messages allow us to have noth ROS1 and ROS2 in the same Workspace. 
+
+### IMPORTANT!! DEPENDENCIES
+
+Depends on external libraries (need to be downloaded to compile both environments):
+
+* [vision_msgs](https://github.com/ros-perception/vision_msgs)
 
 ## ROS1 Build
 
@@ -20,6 +26,7 @@ To compile for ROS1 run on base folder of April_Msgs:
 ```sh
 . /opt/ros/noetic/setup.sh && catkin_make
 ```
+
 
 ## ROS2 Build
 

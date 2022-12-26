@@ -53,7 +53,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg_ros2/PassportValidation.msg
   msg_ros2/QualityCheckResult.msg
   msg_ros2/ShelfLife.msg
-  DEPENDENCIES builtin_interfaces std_msgs
+  DEPENDENCIES builtin_interfaces std_msgs actionlib_msgs sensor_msgs vision_msgs geometry_msgs
   ADD_LINTER_TESTS
   )
 
@@ -79,6 +79,22 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
-ament_export_dependencies(rosidl_default_runtime)
+#ament_export_dependencies(
+#  rosidl_default_runtime
+#  std_msgs
+#  actionlib_msgs
+#  sensor_msgs
+#  vision_msgs
+#  geometry_msgs
+#  )
+
+#ament_target_dependencies(builtin_interfaces 
+#  rosidl_default_runtime 
+#  std_msgs
+#  actionlib_msgs
+#  sensor_msgs
+#  vision_msgs
+#  geometry_msgs
+#  )
 
 ament_package()

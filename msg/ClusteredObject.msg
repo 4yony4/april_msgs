@@ -1,4 +1,4 @@
-std_msgs/Header Header
+std_msgs/Header header
 sensor_msgs/PointCloud2 clustered_point_cloud
 int16 id
 string sclass

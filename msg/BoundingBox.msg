@@ -1,4 +1,4 @@
-std_msgs/Header Header
+std_msgs/Header header
 int64 xmin
 int64 ymin
 int64 xmax

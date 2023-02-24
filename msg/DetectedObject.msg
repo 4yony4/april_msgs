@@ -1,4 +1,4 @@
-std_msgs/Header Header
+std_msgs/Header header
 BoundingBox bounding_box
 sensor_msgs/Image segmentation_mask
 float64 probability

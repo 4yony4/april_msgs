@@ -1,4 +1,4 @@
-std_msgs/Header Header
+std_msgs/Header header
 string action_type
 string[] target_id
 april_msgs/GraspFacts[] grasp_facts

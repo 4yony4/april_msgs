@@ -1,4 +1,4 @@
-std_msgs/Header Header
+std_msgs/Header header
 string motion_prediction
 float32 engagement_level
 float32 cognitive_level

@@ -1,4 +1,4 @@
-std_msgs/Header Header
+std_msgs/Header header
 string result_dynamic_left
 string result_dynamic_right
 string result_static_left

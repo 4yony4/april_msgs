@@ -1,4 +1,4 @@
-std_msgs/Header Header
+std_msgs/Header header
 string state
 april_msgs/RobotArmKinematic[] robotarmkinematic_list
 

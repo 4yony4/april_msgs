@@ -12,47 +12,47 @@ find_package(geometry_msgs REQUIRED)
   
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  msg_ros2/sem/Emergency.msg
-  msg_ros2/sem/EmergencyRequestStatus.msg
-  msg_ros2/sim_sem/Environment.msg
-  msg_ros2/sim/FatigueAnalysis.msg
-  msg_ros2/sim_sem/HumanBehaviour.msg
-  msg_ros2/sim_sem/HumanGraspingStrategies.msg
-  msg_ros2/sim/HumanHandGesture.msg
-  msg_ros2/sim_sem/HumanMotion.msg
-  msg_ros2/sim/HumanParameterIntention.msg #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
-  msg_ros2/sim/HumanSight.msg
-  msg_ros2/sem/NeuromorphicSensing.msg
-  msg_ros2/sim_sem/PhysicalObject.msg
-  msg_ros2/sim/RobotArm.msg
-  msg_ros2/sim/RobotArmKinematic.msg
-  msg_ros2/sim/RobotGraspingStrategies.msg
-  msg_ros2/sim/RobotHand.msg
-  msg_ros2/sim/RobotHandKinematic.msg
-  msg_ros2/sim_sem/RobotHighLatencyCorrections.msg
-  msg_ros2/sem/RobotLowLatencyCorrections.msg
-  msg_ros2/sim/Tactile.msg
-  msg_ros2/yarp/Vjxoutput.msg
-  msg_ros2/Debug.msg
-  msg_ros2/hicem_locem/ActionCommon.msg
-  msg_ros2/pem/BoundingBox.msg
-  msg_ros2/pem/BoundingBoxes.msg
-  msg_ros2/pem/ClusteredObject.msg
-  msg_ros2/pem/DetectedObject.msg
-  msg_ros2/pem/DetectedObjects.msg
-  msg_ros2/pem/EnvironmentNode.msg
-  msg_ros2/pem/GraspFacts.msg
-  msg_ros2/pem/GraspTrajectory.msg
-  msg_ros2/pem/Hand.msg
-  msg_ros2/pem/ObjectEstimatedPose.msg
-  msg_ros2/pem/ObjectsEstimatedPoses.msg
-  msg_ros2/pem/Person.msg
-  msg_ros2/pem/PersonList.msg
-  msg_ros2/pem/SymbolicAction.msg
-  msg_ros2/ComponentStatus.msg
-  msg_ros2/PassportValidation.msg
-  msg_ros2/QualityCheckResult.msg
-  msg_ros2/ShelfLife.msg
+  msg/sem/Emergency.msg
+  msg/sem/EmergencyRequestStatus.msg
+  msg/sim_sem/Environment.msg
+  msg/sim/FatigueAnalysis.msg
+  msg/sim_sem/HumanBehaviour.msg
+  msg/sim_sem/HumanGraspingStrategies.msg
+  msg/sim/HumanHandGesture.msg
+  msg/sim_sem/HumanMotion.msg
+  msg/sim/HumanParameterIntention.msg #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
+  msg/sim/HumanSight.msg
+  msg/sem/NeuromorphicSensing.msg
+  msg/sim_sem/PhysicalObject.msg
+  msg/sim/RobotArm.msg
+  msg/sim/RobotArmKinematic.msg
+  msg/sim/RobotGraspingStrategies.msg
+  msg/sim/RobotHand.msg
+  msg/sim/RobotHandKinematic.msg
+  msg/sim_sem/RobotHighLatencyCorrections.msg
+  msg/sem/RobotLowLatencyCorrections.msg
+  msg/sim/Tactile.msg
+  msg/yarp/Vjxoutput.msg
+  msg/Debug.msg
+  msg/hicem_locem/ActionCommon.msg
+  msg/pem/BoundingBox.msg
+  msg/pem/BoundingBoxes.msg
+  msg/pem/ClusteredObject.msg
+  msg/pem/DetectedObject.msg
+  msg/pem/DetectedObjects.msg
+  msg/pem/EnvironmentNode.msg
+  msg/pem/GraspFacts.msg
+  msg/pem/GraspTrajectory.msg
+  msg/pem/Hand.msg
+  msg/pem/ObjectEstimatedPose.msg
+  msg/pem/ObjectsEstimatedPoses.msg
+  msg/pem/Person.msg
+  msg/pem/PersonList.msg
+  msg/pem/SymbolicAction.msg
+  msg/ComponentStatus.msg
+  msg/PassportValidation.msg
+  msg/QualityCheckResult.msg
+  msg/ShelfLife.msg
   DEPENDENCIES builtin_interfaces std_msgs actionlib_msgs sensor_msgs vision_msgs geometry_msgs
   ADD_LINTER_TESTS
   )

@@ -1,4 +1,0 @@
-std_msgs/Header header
-sensor_msgs/Image image_rgb
-sensor_msgs/PointCloud image_3d
-string class_name

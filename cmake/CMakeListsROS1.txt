@@ -14,7 +14,7 @@ FILE(GLOB messages_to_build RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/msg"
 
 # notify catkin to look at the previously found msg files
 add_message_files(DIRECTORY
-  msg_ros1
+  msg
   FILES
   ${messages_to_build}
 )

@@ -12,43 +12,43 @@ find_package(geometry_msgs REQUIRED)
   
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  msg/sem/Emergency.msg
-  msg/sem/EmergencyRequestStatus.msg
-  msg/sim_sem/Environment.msg
-  msg/sim/FatigueAnalysis.msg
-  msg/sim_sem/HumanBehaviour.msg
-  msg/sim_sem/HumanGraspingStrategies.msg
-  msg/sim/HumanHandGesture.msg
-  msg/sim_sem/HumanMotion.msg
-  msg/sim/HumanParameterIntention.msg #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
-  msg/sim/HumanSight.msg
-  msg/sem/NeuromorphicSensing.msg
-  msg/sim_sem/PhysicalObject.msg
-  msg/sim/RobotArm.msg
-  msg/sim/RobotArmKinematic.msg
-  msg/sim/RobotGraspingStrategies.msg
-  msg/sim/RobotHand.msg
-  msg/sim/RobotHandKinematic.msg
-  msg/sim_sem/RobotHighLatencyCorrections.msg
-  msg/sem/RobotLowLatencyCorrections.msg
-  msg/sim/Tactile.msg
-  msg/yarp/Vjxoutput.msg
+  msg/Emergency.msg
+  msg/EmergencyRequestStatus.msg
+  msg/Environment.msg
+  msg/FatigueAnalysis.msg
+  msg/HumanBehaviour.msg
+  msg/HumanGraspingStrategies.msg
+  msg/HumanHandGesture.msg
+  msg/HumanMotion.msg
+  msg/HumanParameterIntention.msg #FLOAT TYPE FAILS BUILD, CHECK FLOAT TYPE
+  msg/HumanSight.msg
+  msg/NeuromorphicSensing.msg
+  msg/PhysicalObject.msg
+  msg/RobotArm.msg
+  msg/RobotArmKinematic.msg
+  msg/RobotGraspingStrategies.msg
+  msg/RobotHand.msg
+  msg/RobotHandKinematic.msg
+  msg/RobotHighLatencyCorrections.msg
+  msg/RobotLowLatencyCorrections.msg
+  msg/Tactile.msg
+  msg/Vjxoutput.msg
   msg/Debug.msg
-  msg/hicem_locem/ActionCommon.msg
-  msg/pem/BoundingBox.msg
-  msg/pem/BoundingBoxes.msg
-  msg/pem/ClusteredObject.msg
-  msg/pem/DetectedObject.msg
-  msg/pem/DetectedObjects.msg
-  msg/pem/EnvironmentNode.msg
-  msg/pem/GraspFacts.msg
-  msg/pem/GraspTrajectory.msg
-  msg/pem/Hand.msg
-  msg/pem/ObjectEstimatedPose.msg
-  msg/pem/ObjectsEstimatedPoses.msg
-  msg/pem/Person.msg
-  msg/pem/PersonList.msg
-  msg/pem/SymbolicAction.msg
+  msg/ActionCommon.msg
+  msg/BoundingBox.msg
+  msg/BoundingBoxes.msg
+  msg/ClusteredObject.msg
+  msg/DetectedObject.msg
+  msg/DetectedObjects.msg
+  msg/EnvironmentNode.msg
+  msg/GraspFacts.msg
+  msg/GraspTrajectory.msg
+  msg/Hand.msg
+  msg/ObjectEstimatedPose.msg
+  msg/ObjectsEstimatedPoses.msg
+  msg/Person.msg
+  msg/PersonList.msg
+  msg/SymbolicAction.msg
   msg/ComponentStatus.msg
   msg/PassportValidation.msg
   msg/QualityCheckResult.msg

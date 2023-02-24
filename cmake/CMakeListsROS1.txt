@@ -21,7 +21,7 @@ add_message_files(DIRECTORY
 
 # # Generate services in the 'srv' folder
 add_service_files(DIRECTORY
-  srv_ros1
+  srv
   FILES
   GetPregraspPose.srv
   GetSymbolicAction.srv
@@ -33,7 +33,7 @@ add_service_files(DIRECTORY
 
 # Generate actions in the 'action' folder
 add_action_files(DIRECTORY
-  action_ros1
+  action
   FILES
   ExecuteGraspTrajectory.action
   Handover.action

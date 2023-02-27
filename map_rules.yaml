@@ -1,8 +1,14 @@
 -
-  ros1_package_name: 'april_msgs'
+  ros1_package_name: 'yarp'
   ros1_message_name: 'Vjxoutput'
   ros2_package_name: 'april_msgs'
   ros2_message_name: 'Vjxoutput'
+
+#-
+#  ros1_package_name: 'april_msgs'
+#  ros1_message_name: 'Vjxoutput'
+#  ros2_package_name: 'april_msgs'
+#  ros2_message_name: 'Vjxoutput'
 
 #-
 #  ros1_package_name: 'april_msgs'

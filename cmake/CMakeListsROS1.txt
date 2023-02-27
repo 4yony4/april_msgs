@@ -10,18 +10,18 @@ find_package(catkin REQUIRED COMPONENTS
 
 # search for all msg files
 FILE(GLOB messages_to_build RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}/msg"
-    "${CMAKE_CURRENT_SOURCE_DIR}/msg_ros1/*.msg")
+    "${CMAKE_CURRENT_SOURCE_DIR}/msg/*.msg")
 
 # notify catkin to look at the previously found msg files
 add_message_files(DIRECTORY
-  msg_ros1
+  msg
   FILES
   ${messages_to_build}
 )
 
 # # Generate services in the 'srv' folder
 add_service_files(DIRECTORY
-  srv_ros1
+  srv
   FILES
   GetPregraspPose.srv
   GetSymbolicAction.srv
@@ -33,7 +33,7 @@ add_service_files(DIRECTORY
 
 # Generate actions in the 'action' folder
 add_action_files(DIRECTORY
-  action_ros1
+  action
   FILES
   ExecuteGraspTrajectory.action
   Handover.action

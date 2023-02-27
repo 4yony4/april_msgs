@@ -1,3 +1,0 @@
-std_msgs/Header Header
-string request_progress
-string request_result

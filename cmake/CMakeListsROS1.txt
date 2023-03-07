@@ -58,7 +58,7 @@ generate_messages(
 
 # export the dependencis of this package for who ever depends on us
 catkin_package(
-  CATKIN_DEPENDS actionlib_msgs std_msgs sensor_msgs vision_msgs geometry_msgs message_runtime diagnostic_msgs diagnostic_updater
+  CATKIN_DEPENDS actionlib_msgs std_msgs sensor_msgs vision_msgs geometry_msgs message_runtime #diagnostic_msgs diagnostic_updater
 )
 
 include_directories(

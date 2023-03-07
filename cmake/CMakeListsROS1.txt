@@ -6,7 +6,9 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   vision_msgs
   geometry_msgs
-  diagnostics
+  diagnostic_msgs
+  diagnostic_updater
+  diagnostic_aggregator
 )
 
 # search for all msg files
@@ -51,12 +53,14 @@ generate_messages(
   sensor_msgs
   vision_msgs
   geometry_msgs
-  diagnostics
+  diagnostic_msgs
+  diagnostic_updater
+  diagnostic_aggregator
 )
 
 # export the dependencis of this package for who ever depends on us
 catkin_package(
-  CATKIN_DEPENDS actionlib_msgs std_msgs sensor_msgs vision_msgs geometry_msgs message_runtime diagnostics
+  CATKIN_DEPENDS actionlib_msgs std_msgs sensor_msgs vision_msgs geometry_msgs message_runtime diagnostic_msgs diagnostic_updater diagnostic_aggregator
 )
 
 include_directories(

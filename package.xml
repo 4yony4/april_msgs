@@ -39,6 +39,7 @@
   <exec_depend condition="$ROS_VERSION == 1">vision_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">geometry_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">actionlib_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">diagnostics</exec_depend>
   <!--exec_depend condition="$ROS_VERSION == 1">sensor_msgs</exec_depend-->
 
   <!--  ROS2 dependencies -->
@@ -58,13 +59,14 @@
   <exec_depend condition="$ROS_VERSION == 2">geometry_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 2">std_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 2">actionlib_msgs</exec_depend>
-  
+  <exec_depend condition="$ROS_VERSION == 2">diagnostics</exec_depend>
 
   <!-- common dependencies -->
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>vision_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>diagnostics</depend>
 
   <member_of_group condition="$ROS_VERSION == 2">rosidl_interface_packages</member_of_group>
 

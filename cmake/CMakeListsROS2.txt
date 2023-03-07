@@ -8,6 +8,8 @@ find_package(actionlib_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(vision_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(diagnostics REQUIRED)
+
   
   
 
@@ -53,7 +55,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   msg/PassportValidation.msg
   msg/QualityCheckResult.msg
   msg/ShelfLife.msg
-  DEPENDENCIES builtin_interfaces std_msgs actionlib_msgs sensor_msgs vision_msgs geometry_msgs
+  DEPENDENCIES builtin_interfaces std_msgs actionlib_msgs sensor_msgs vision_msgs geometry_msgs diagnostics
   ADD_LINTER_TESTS
   )
 

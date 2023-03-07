@@ -30,22 +30,22 @@
   <build_depend condition="$ROS_VERSION == 1">vision_msgs</build_depend>
   <build_depend condition="$ROS_VERSION == 1">geometry_msgs</build_depend>
   <build_depend condition="$ROS_VERSION == 1">actionlib_msgs</build_depend>
-  <build_depend condition="$ROS_VERSION == 1">diagnostic_msgs</build_depend>
-  <build_depend condition="$ROS_VERSION == 1">diagnostic_updater</build_depend>
+  <!--build_depend condition="$ROS_VERSION == 1">diagnostic_msgs</build_depend-->
+  <!--build_depend condition="$ROS_VERSION == 1">diagnostic_updater</build_depend-->
   <build_export_depend condition="$ROS_VERSION == 1">std_msgs</build_export_depend>
   <build_export_depend condition="$ROS_VERSION == 1">sensor_msgs</build_export_depend>
   <build_export_depend condition="$ROS_VERSION == 1">vision_msgs</build_export_depend>
   <build_export_depend condition="$ROS_VERSION == 1">geometry_msgs</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 1">diagnostic_msgs</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 1">diagnostic_updater</build_export_depend>
+  <!--build_export_depend condition="$ROS_VERSION == 1">diagnostic_msgs</build_export_depend-->
+  <!--build_export_depend condition="$ROS_VERSION == 1">diagnostic_updater</build_export_depend-->
   <exec_depend condition="$ROS_VERSION == 1">message_runtime</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">std_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">vision_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">geometry_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">actionlib_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 1">diagnostic_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 1">diagnostic_updater</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 1">diagnostic_aggregator</exec_depend>
+  <!--exec_depend condition="$ROS_VERSION == 1">diagnostic_msgs</exec_depend-->
+  <!--exec_depend condition="$ROS_VERSION == 1">diagnostic_updater</exec_depend-->
+  <!--exec_depend condition="$ROS_VERSION == 1">diagnostic_aggregator</exec_depend-->
   <!--exec_depend condition="$ROS_VERSION == 1">sensor_msgs</exec_depend-->
 
   <!--  ROS2 dependencies -->
@@ -67,18 +67,18 @@
   <exec_depend condition="$ROS_VERSION == 2">geometry_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 2">std_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 2">actionlib_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">diagnostic_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">diagnostic_updater</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">diagnostic_aggregator</exec_depend>
+  <!--exec_depend condition="$ROS_VERSION == 2">diagnostic_msgs</exec_depend-->
+  <!--exec_depend condition="$ROS_VERSION == 2">diagnostic_updater</exec_depend-->
+  <!--exec_depend condition="$ROS_VERSION == 2">diagnostic_aggregator</exec_depend-->
 
   <!-- common dependencies -->
   <depend>std_msgs</depend>
   <depend>sensor_msgs</depend>
   <depend>vision_msgs</depend>
   <depend>geometry_msgs</depend>
-  <depend>diagnostic_msgs</depend>
-  <depend>diagnostic_updater</depend>
-  <depend>diagnostic_aggregator</depend>
+  <!--depend>diagnostic_msgs</depend-->
+  <!--depend>diagnostic_updater</depend-->
+  <!--depend>diagnostic_aggregator</depend-->
 
   <member_of_group condition="$ROS_VERSION == 2">rosidl_interface_packages</member_of_group>
 
